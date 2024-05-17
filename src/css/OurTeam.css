@@ -1,0 +1,94 @@
+.team-container {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+}
+
+.team-title {
+  font-size: 24px;
+  text-decoration: underline;
+  text-decoration-color: #04d9ff;
+  margin-bottom: 10px;
+}
+
+.team-subtitle {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.team-members {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.team-member {
+  width: calc(33.33% - 20px); 
+  margin: 0 10px; 
+  box-sizing: border-box;
+}
+
+.member-box {
+  position: relative;
+  width: 100%;
+  height: 10cm;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.member-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.member-name {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px 0;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.member-details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(100, 224, 192, 0.8); 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.member-box:hover .member-details {
+  opacity: 1;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  color: #000;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #64e0c0;
+}

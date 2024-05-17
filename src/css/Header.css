@@ -1,0 +1,44 @@
+.header {
+  background-color: #37393F;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-info {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding-left: 100px; 
+}
+
+.contact-info p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 10px; 
+}
+
+.contact-info i {
+  color: #04d9ff; 
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  padding-right: 100px; 
+}
+
+.social-links a {
+  color: #04d9ff; 
+  margin-left: 20px; 
+  text-decoration: none;
+  font-size: 1.5em;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #ccc;
+}

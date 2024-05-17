@@ -1,0 +1,65 @@
+.work-process-section {
+    padding: 50px 20px;
+    text-align: center;
+    font-family: 'inter, sans-serif';
+  }
+  
+  .work-process-title-container {
+    margin-bottom: 30px;
+  }
+  
+  .work-process-title {
+    font-size: 24px;
+    text-decoration: underline;
+    text-decoration-color: #04d9ff;
+    margin-bottom: 10px; 
+  }
+  
+  .work-process-subtitle {
+    font-size: 50px;
+    font-weight: bolder;
+  }
+  
+  .work-process-box-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 100px; 
+  }
+  
+  .work-process-box {
+    background-color: #F4F4F4;
+    border-radius: 10px;
+    padding: 40px 20px 20px; 
+    text-align: center;
+    width: 30%; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative; 
+    margin: 0 20px; 
+  }
+  
+  .work-process-icon-container {
+    position: absolute;
+    top: -30px; 
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #F4F4F4;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .work-process-icon {
+    height: 40px; 
+    width: 40px; 
+  }
+  
+  h3 {
+    margin-top: 60px; 
+    margin-bottom: 10px; 
+  }
+  
+  p {
+    font-size: 16px; 
+    color: #666666; 
+  }
+  

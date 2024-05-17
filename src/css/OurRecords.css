@@ -1,0 +1,52 @@
+.our-records-section {
+    position: relative;
+    background-color: #f2f2f2; /* Apply background color to the entire section */
+    padding: 50px 150px; /* Add space at the top and bottom */
+    text-align: center;
+  }
+  
+  .our-records-title-container {
+    margin-bottom: 20px; /* Space between the title and the contents */
+  }
+  
+  .our-records-title {
+    font-size: 36px;
+    text-decoration: underline;
+    text-decoration-color: #04d9ff;
+    margin-bottom: 10px; /* Space between the title and the subtitle */
+  }
+  
+  .our-records-box-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    flex-wrap: wrap;
+  }
+  
+  .our-records-icon {
+    height: 40px; 
+    width: 40px; 
+    margin-bottom: 5px; 
+  }
+  
+  .our-records-content {
+    flex: 0 0 45%;
+    text-align: center;
+    margin: 0 40px 0 40px; 
+  }
+  
+  .vertical-line {
+    border-left: 2px solid #04d9ff;
+    height: 120px;
+    margin: 0 10px; 
+  }
+  
+  @media (max-width: 768px) {
+    .our-records-content {
+      width: 75%;
+    }
+    .vertical-line {
+      display: none; 
+    }
+  }
+  

@@ -1,0 +1,45 @@
+.about-us-section {
+  position: relative;
+}
+
+.about-us-content {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  color: white;
+  background-color: rgba(73, 75, 79, 0.9);
+  padding: 20px;
+  height: 360px;
+  border-radius: 10px;
+  width: 50%; 
+  max-width: 700px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left; 
+  padding-left: 20px; 
+}
+
+.about-us-background {
+  background-image: url('D:/sem-6/Lab/Full Stack/civicraft/src/assets/meeting.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+}
+
+.about-us-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  font-family: 'inter, sans-serif';
+  text-decoration: underline;
+  text-decoration-color: #04d9ff;
+  margin: 10px 0; 
+}
+
+.about-us-content p {
+  margin: 10px 0; 
+  font-family: 'Times New Roman', serif;
+}
