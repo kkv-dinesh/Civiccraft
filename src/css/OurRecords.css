@@ -1,52 +1,59 @@
 .our-records-section {
-    position: relative;
-    background-color: #f2f2f2; /* Apply background color to the entire section */
-    padding: 50px 150px; /* Add space at the top and bottom */
-    text-align: center;
+  position: relative;
+  background-color: #f2f2f2;
+  padding: 50px 150px;
+  text-align: center;
+}
+
+.our-records-box-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px; /* Add gap between flex items for better spacing */
+}
+
+.our-records-box {
+  flex: 1;
+  min-width: 250px; /* Ensure boxes don't get too small */
+  max-width: 25%;
+  text-align: center;
+  margin: 20px 10px; /* Add margin for better spacing */
+  background-color: white; /* Add background color to each box */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+.our-records-icon {
+  height: 40px;
+  width: 40px;
+  margin-bottom: 5px;
+}
+
+.vertical-line {
+  border-left: 2px solid #04d9ff;
+  height: 120px;
+  margin: 0 10px;
+}
+
+@media (max-width: 992px) {
+  .our-records-section {
+      padding: 50px 50px;
   }
-  
-  .our-records-title-container {
-    margin-bottom: 20px; /* Space between the title and the contents */
+  .our-records-box {
+      max-width: 45%;
   }
-  
-  .our-records-title {
-    font-size: 36px;
-    text-decoration: underline;
-    text-decoration-color: #04d9ff;
-    margin-bottom: 10px; /* Space between the title and the subtitle */
+}
+
+@media (max-width: 768px) {
+  .our-records-section {
+      padding: 50px 20px;
   }
-  
-  .our-records-box-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
-    flex-wrap: wrap;
+  .our-records-box {
+      max-width: 100%;
   }
-  
-  .our-records-icon {
-    height: 40px; 
-    width: 40px; 
-    margin-bottom: 5px; 
-  }
-  
-  .our-records-content {
-    flex: 0 0 45%;
-    text-align: center;
-    margin: 0 40px 0 40px; 
-  }
-  
   .vertical-line {
-    border-left: 2px solid #04d9ff;
-    height: 120px;
-    margin: 0 10px; 
+      display: none;
   }
-  
-  @media (max-width: 768px) {
-    .our-records-content {
-      width: 75%;
-    }
-    .vertical-line {
-      display: none; 
-    }
-  }
-  
+}

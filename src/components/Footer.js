@@ -52,7 +52,7 @@ const Footer = () => {
               <li>Utopia</li>
               <li>Drewy</li>
               <li>HCL</li>
-              <li>Twin Rvers</li>
+              <li>Twin Rivers</li>
               <li>UDAA</li>
               <li>DA</li>
               <li>Sung</li>

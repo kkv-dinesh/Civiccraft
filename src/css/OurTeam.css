@@ -18,21 +18,19 @@
 
 .team-members {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 10px;
+  flex-wrap: wrap; /* Allow team members to wrap to the next line */
+  justify-content: center; /* Center team members horizontally */
 }
 
 .team-member {
-  width: calc(33.33% - 20px); 
-  margin: 0 10px; 
+  width: calc(33.33% - 20px); /* Adjust width to fit three members in a row */
+  margin: 20px 10px; /* Add margin around each member */
   box-sizing: border-box;
 }
 
 .member-box {
   position: relative;
   width: 100%;
-  height: 10cm;
   overflow: hidden;
   border: 1px solid #ddd;
   border-radius: 10px;
@@ -42,8 +40,8 @@
 
 .member-photo {
   width: 100%;
-  height: 100%;
-  object-fit: contain;
+  height: auto; /* Ensure the photo maintains aspect ratio */
+  display: block; /* Remove default image spacing */
 }
 
 .member-name {
@@ -55,6 +53,7 @@
   font-size: 18px;
   font-weight: bold;
   margin: 0;
+  text-align: center; /* Center the member name */
 }
 
 .member-details {
@@ -63,7 +62,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(100, 224, 192, 0.8); 
+  background-color: rgba(100, 224, 192, 0.8);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -91,4 +90,17 @@
 
 .social-icons a:hover {
   color: #64e0c0;
+}
+
+/* Adjust styles for smaller screens */
+@media (max-width: 768px) {
+  .team-member {
+    width: calc(50% - 20px); /* Adjust width to fit two members in a row */
+  }
+}
+
+@media (max-width: 576px) {
+  .team-member {
+    width: 100%; /* Adjust width to fit one member per row */
+  }
 }

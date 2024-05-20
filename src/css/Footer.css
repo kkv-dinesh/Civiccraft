@@ -47,26 +47,31 @@
     display: flex;
     justify-content: space-between;
     padding: 20px 0;
+    flex-wrap: wrap;
 }
 
 .footer-lists {
     display: flex;
     justify-content: space-evenly;
     width: 70%;
+    flex-wrap: wrap;
+}
+
+.footer-list {
+    margin-bottom: 20px;
 }
 
 .footer-list h3 {
     font-size: 18px;
     margin-bottom: 10px;
-    color:#33b1e9;
+    color: #33b1e9;
 }
 
 .footer-list ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    list-style-type:square;
-    
+    list-style-type: square;
 }
 
 .footer-list ul li {
@@ -76,6 +81,7 @@
 .subscribe {
     width: 25%;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .subscribe h3 {
@@ -93,7 +99,6 @@
     padding: 15px 20px;
     margin-bottom: 10px;
     border: none;
-    
 }
 
 .subscribe button {
@@ -110,11 +115,16 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 20px;
+    flex-wrap: wrap;
 }
 
 .footer-bottom p {
     margin: 0;
     color: white;
+}
+
+.social-icons {
+    display: flex;
 }
 
 .social-icons a {
@@ -127,4 +137,55 @@ hr {
     border: none;
     border-top: 1px solid #d0bfbf;
     margin: 0;
+}
+
+@media (max-width: 992px) {
+    .footer-top {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 0;
+        padding-bottom: 10px;
+    }
+
+    .footer-right {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-middle {
+        flex-direction: column;
+    }
+
+    .footer-lists {
+        width: 100%;
+    }
+
+    .subscribe {
+        width: 100%;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+    }
+
+    .social-icons {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact-item {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .subscribe input {
+        width: 80%;
+    }
+
+    .subscribe button {
+        width: 80%;
+    }
 }

@@ -1,16 +1,17 @@
 .header {
   background-color: #37393F;
-  padding: 10px 20px;
+  padding: 10px 100px; /* Adjust padding here */
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
 }
 
 .contact-info {
   display: flex;
   gap: 20px;
   align-items: center;
-  padding-left: 100px; 
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
 }
 
 .contact-info p {
@@ -18,22 +19,22 @@
   display: flex;
   align-items: center;
   color: white;
-  gap: 10px; 
+  gap: 10px;
 }
 
 .contact-info i {
-  color: #04d9ff; 
+  color: #04d9ff;
 }
 
 .social-links {
   display: flex;
   align-items: center;
-  padding-right: 100px; 
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
 }
 
 .social-links a {
-  color: #04d9ff; 
-  margin-left: 20px; 
+  color: #04d9ff;
+  margin-left: 20px;
   text-decoration: none;
   font-size: 1.5em;
   transition: color 0.3s;
@@ -41,4 +42,52 @@
 
 .social-links a:hover {
   color: #ccc;
+}
+
+@media (max-width: 992px) {
+  .header {
+    padding: 10px 50px; /* Adjust padding for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 10px 20px; /* Adjust padding for smaller screens */
+  }
+
+  .contact-info {
+    gap: 10px; /* Reduce gap for smaller screens */
+  }
+
+  .social-links {
+    margin-top: 10px; /* Add margin-top for separation on smaller screens */
+  }
+
+  .social-links a {
+    font-size: 1.2em; /* Reduce icon size for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    flex-direction: column; /* Stack elements vertically for very small screens */
+    align-items: flex-start;
+    padding: 10px; /* Adjust padding for very small screens */
+  }
+
+  .contact-info {
+    justify-content: center; /* Center elements horizontally */
+    width: 100%;
+  }
+
+  .social-links {
+    justify-content: center; /* Center elements horizontally */
+    width: 100%;
+    margin-top: 10px; /* Maintain margin-top for separation */
+  }
+
+  .social-links a {
+    margin-left: 10px; /* Reduce margin between icons for very small screens */
+    font-size: 1em; /* Further reduce icon size for very small screens */
+  }
 }

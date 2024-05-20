@@ -1,29 +1,30 @@
 .about-us-section {
   position: relative;
+  padding: 20px; /* Add some padding to prevent content from touching edges */
 }
 
 .about-us-content {
   position: absolute;
   top: 50%;
-  left: 0;
+  left: 1%;
   transform: translateY(-50%);
   color: white;
   background-color: rgba(73, 75, 79, 0.9);
   padding: 20px;
-  height: 360px;
+  min-height: 360px; /* Set minimum height */
   border-radius: 10px;
-  width: 50%; 
-  max-width: 700px; 
+  width: 50%; /* Set a default width */
+  max-width: 700px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: left; 
-  padding-left: 20px; 
+  text-align: left;
+  padding-left: 20px;
 }
 
 .about-us-background {
-  background-image: url('D:/sem-6/Lab/Full Stack/civicraft/src/assets/meeting.jpeg');
+  background-image: url('../assets/meeting.jpeg');
   background-size: cover;
   background-position: center;
   height: 400px;
@@ -33,13 +34,77 @@
   font-size: 24px;
   font-weight: bold;
   color: white;
-  font-family: 'inter, sans-serif';
+  font-family: 'Inter, sans-serif';
   text-decoration: underline;
   text-decoration-color: #04d9ff;
-  margin: 10px 0; 
+  margin: 10px 0;
 }
 
 .about-us-content p {
-  margin: 10px 0; 
+  margin: 10px 0;
   font-family: 'Times New Roman', serif;
+}
+
+@media (max-width: 1200px) {
+  .about-us-content {
+    width: 60%;
+  }
+}
+
+@media (max-width: 992px) {
+  .about-us-content {
+    width: 70%;
+  }
+
+  .about-us-title {
+    font-size: 22px;
+  }
+
+  .about-us-content p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-us-content {
+    width: 80%;
+  }
+
+  .about-us-title {
+    font-size: 20px;
+  }
+
+  .about-us-content p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-us-content {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .about-us-title {
+    font-size: 18px;
+  }
+
+  .about-us-content p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-us-content {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .about-us-title {
+    font-size: 16px;
+  }
+
+  .about-us-content p {
+    font-size: 11px;
+  }
 }
